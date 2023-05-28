@@ -1,46 +1,52 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
-	margin: 10px;
-	padding: 10px;
+	border: red dotted 1px;
+	background-color: #ad8b73;
+	color: #fffbe9;
 }
 
 .maingrid {
 	display: grid;
-	grid-template-columns: 1fr 4fr;
+	grid-template-columns: 1fr 5fr;
 	grid-template-rows: auto;
 	column-gap: 10px;
-	row-gap: 100px;
+	row-gap: 10px;
+	width: 100vw;
+	height: 100vh;
+	padding: 10px;
+	margin: 10px;
 }
 
 .sidebar {
+	background-color: #ceab93;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 10px;
-	margin: 10px;
+	margin: auto;
+	width: 100%;
+	height: 100%;
 }
 
 .pagegrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 4fr;
+	grid-template-rows: 1fr 5fr;
 	column-gap: 10px;
 	row-gap: 10px;
+	width: 100%;
+	height: 100%;
 }
 
 .navbar {
+	background-color: #ceab93;
 	grid-column-start: 1;
 	grid-column-end: 5;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
-	padding: 10px;
-	margin: 10px;
+	width: 100%;
+	height: 100%;
 }
 
 .mainpage {
@@ -48,9 +54,11 @@
 	grid-column-end: 5;
 	display: grid;
 	grid-template-columns: 4fr 1fr;
-	grid-template-rows: auto auto;
+	grid-template-rows: auto;
 	column-gap: 10px;
 	row-gap: 10px;
+	width: 100%;
+	height: 100%;
 }
 
 .projects {
@@ -59,31 +67,85 @@
 	grid-template-rows: 1fr 1fr;
 	column-gap: 10px;
 	row-gap: 10px;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+	height: 100%;
 }
 
-.leftbar {
+.rightbar {
+	background-color: #ceab93;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
-	padding: 10px;
-	margin: 10px;
+	height: auto;
+	width: auto;
 }
 
 .todo {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
+	padding: auto;
+	margin: auto;
+	height: 100%;
+	width: auto;
+}
+
+.announcements {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: auto;
+	margin: auto;
+	height: 100%;
+	width: auto;
+}
+
+.project {
+	background-color: #ceab93;
+	width: 100%;
+	height: 100%;
+}
+
+.sideitem {
+	background-color: #ad8b73;
+	padding: 10px;
+}
+
+.navitem {
+	background-color: #ad8b73;
 	padding: 10px;
 	margin: 10px;
 }
 
-.announcements {
-	display: row;
+.todo {
+	background-color: red;
+	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
+	width: 100%;
+}
+
+.task {
+	color: orange;
 	padding: 10px;
-	margin: 10px;
+}
+
+.announcements {
+	background-color: blue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.announcement {
+	color: yellow;
+	padding: 10px;
 }
