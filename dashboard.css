@@ -199,6 +199,27 @@ img {
 	box-shadow: none;
 }
 
+#github {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	fill-rule: var(--accent-color);
+}
+
+.navitem > #github {
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	scale: 30%;
+}
+
+#github:hover {
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	fill-rule: var(--accent-color);
+}
+
 /*Navbar > navitem*/
 
 .navbar {
